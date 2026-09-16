@@ -1,0 +1,12 @@
+{
+  "name": "svg_utils",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "svg_utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Garratt",
+  "license": "ISC",
+  "description": ""
+}
