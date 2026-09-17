@@ -53,6 +53,14 @@ function transformBbox(bbox, matrix) {
 	}
 }
 
+function addXY(obj, xy) {
+	return {
+		...obj,
+		x: obj.x + xy.x,
+		y: obj.y + xy.y
+	}
+}
+
 function getSVGCoords(x, y, element) {
 	return transformCoords(x, y, element.getScreenCTM().inverse())
 }
@@ -75,4 +83,9 @@ function dragging(callback, transformCoords) {
 	})
 }
 
-export { addSVGElement, editSVGElement, SVG_URL, HTML_URL, dragging, getSVGCoords, transformCoords, transformBbox, randomColour, calcPerpendicularTranslation };
+export { 
+	addSVGElement, editSVGElement, SVG_URL, HTML_URL,
+	dragging, getSVGCoords, transformCoords, transformBbox,
+	randomColour, calcPerpendicularTranslation,
+	addXY
+};
